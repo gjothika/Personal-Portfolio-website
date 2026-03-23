@@ -1,30 +1,27 @@
- * {
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} 
-
- html, body, #root {
-  /* height: 100%; */
-  /* overflow: hidden; */
-} 
-
-
-header ul li{
+}
+html {
+  scroll-behavior: smooth;
+}
+header ul li {
   @apply px-3;
 }
-.mobile-nav{
-  @apply fixed top-10 w-full h-1/3 bg-slate-800 left-0 p-3 gap-2;
+.mobile-nav {
+  @apply fixed top-16 left-0 w-full bg-blue-800 flex flex-col items-center py-5 gap-4 md:hidden;
 }
-.mobile-nav  li{
-  @apply w-full h-full text-center border-b-2   ;
+.mobile-nav li {
+  @apply border-b border-white w-full text-center py-2;
 }
-.project-design{
-  @apply absolute left-0 right-0 bottom-0 top-0 py-5 px-2 bg-blue-950 h-[210px] w-[340px] opacity-0 duration-500 hover:opacity-100
+.project-design {
+  @apply absolute inset-0 flex items-center justify-center bg-black bg-opacity-70 text-white opacity-0 hover:opacity-100 transition duration-300;
 }
-.bttn{
-  @apply bg-blue-700 px-3 py-2 border-2  border-blue-700 hover:border-white 
-}
-html{
-  scroll-behavior: smooth;
+.bttn {
+  @apply inline-block bg-blue-600 px-4 py-2 rounded text-white hover:bg-blue-500 transition;
 }

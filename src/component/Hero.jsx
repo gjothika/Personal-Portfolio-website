@@ -9,8 +9,8 @@ const Hero = () => {
                 <h1 className=' text-white text-6xl font-hero'>Hi, <br /> Iam Jothika
                 <p className='text-2xl pt-4'>Iam a Full-Stack Developer</p></h1>
                 <div className='flex py-10 gap-3 '>
-                    <a href='' className='hover:text-white'><AiOutlineLinkedin size={30}/></a>
-                    <a href='' className='hover:text-white'><AiOutlineGithub size={30}/></a>
+                    <a href="https://www.linkedin.com/in/jothika-g-6039232a2/" target="_blank" rel="noopener noreferrer" className='hover:text-white'><AiOutlineLinkedin size={30}/></a>
+                    <a href="https://github.com/gjothika/" target="_blank" rel="noopener noreferrer" className='hover:text-white'><AiOutlineGithub size={30}/></a>
                     <a href='' className='hover:text-white'><AiOutlineTwitter size={30}/></a>
                </div>
             </div>

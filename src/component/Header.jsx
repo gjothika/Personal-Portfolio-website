@@ -8,6 +8,7 @@ const [toggleMenu,setToggleMenu]=useState(false)
   return (
     <div>
         <header className='flex justify-between px-5 py-3 bg-blue-800 flex-wrap w-full'>
+        {/* <header className='fixed top-0 left-0 w-full z-50 flex justify-between items-center px-4 md:px-10 py-4 bg-blue-800 shadow'></header> */}
             <a className='font-bold text-white ' href='#'>Jothika G</a>
             <nav className='hidden md:block'>
               <ul className='flex text-white gap-4' >
@@ -19,7 +20,7 @@ const [toggleMenu,setToggleMenu]=useState(false)
             </ul>
             </nav>
             { toggleMenu && <nav className='block md:hidden '>
-              <ul onClick={()=> setToggleMenu(!toggleMenu)} className='flex flex-col text-white mobile-nav' >
+              <ul onClick={()=> setToggleMenu(!toggleMenu)} className='flex flex-col text-white mobile-nav'>
                 <li><a href='/'>Home</a></li>
                 <li><a href='#about'>About</a></li>
                 <li><a href='#project'>Projects</a></li>
