@@ -1,44 +1,60 @@
 import React from 'react'
-import project from '../assets/project.png'
-import projects from '../assets/projects.png'
-import project1 from '../assets/project1.png'
+import loan from '../assets/loan.png'
+import ecommerce from '../assets/e-commerce.png'
+import restaurant from '../assets/restaurant.png'
+import todo from '../assets/todo.png'
+import weather from '../assets/weather.png'
+import milky from '../assets/milky.png'
+
 const Project  = () => {
   return (
-    <div>
-       <section id='project' className='flex  flex-col justify-center bg-blue-700 py-10 px-10'>
-        <div className='w-full pb-10'>
-        <div className='flex flex-col justify-center text-white'>
-            <h1 className='text-4xl  border-b-2 border-primary mb-5 w-[140px] font-bold mx-auto text-center'>Projects</h1>
-            <p className='px-10'>These are my projects built using HTML, CSS, JavaScript, and React.js. I used Tailwind CSS for styling and created responsive, user-friendly web applications.</p>
+    <section id='project' className='bg-blue-700 py-10 px-4 md:px-20'>
+      <div className='text-center text-white mb-10'>
+        <h1 className='text-3xl md:text-4xl font-bold mb-3'>Projects</h1>
+        <p className='text-sm md:text-base px-2 md:px-20'>Here are some of the web applications I have developed using React, JavaScript, and modern UI technologies, focusing on responsive design and user experience.
+        </p>
+      </div>
+      <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-4'>
+        <div className='relative group'>
+          <img className='w-full h-[220px] object-cover rounded-lg' src={restaurant} />
+          <div className='project-design group-hover:opacity-100 rounded-lg'>
+            <p className='text-center'>Designed and developed a responsive restaurant website using HTML & CSS. </p>
+          </div>
         </div>
+        <div className='relative group'>
+          <img className='w-full h-[220px] object-cover rounded-lg' src={todo} />
+          <div className='project-design group-hover:opacity-100 rounded-lg'>
+            <p className='text-center'>Developed a simple To-Do application using React to manage daily tasks with add and delete functionality.</p>
+          </div>
         </div>
-        <div className='w-full '>
-        <div className='flex md:flex-row flex-col px-20 gap-8 text-white '>
-            <div className='relative'>
-               <img  className='h-[210px] w-[340px]'src={projects}/>
-               <div className='project-design'>
-                  <p className='text-center'>Designed and developed a responsive restaurant website using HTML & CSS.</p>
-               </div>
-            </div>
-
-            <div className='relative'>
-            <img className='h-[210px] w-[340px]' src={project}/>
-                <div className='project-design'>
-                   <p className='text-center'>Developed a loan management application with secure login and MySQL data storage. </p>
-                </div>
-            </div>
-            
-            <div className='relative'>
-            <img className='h-[210px] w-[340px]' src={project1}/>
-                <div className='project-design'>
-                   <p className='text-center'>Developed a weather application using React that shows real-time weather information with a responsive design.</p>
-                </div>
-            </div>
-
+        <div className='relative group'>
+          <img className='w-full h-[220px] object-cover rounded-lg' src={weather}/>
+          <div className='project-design group-hover:opacity-100 rounded-lg'>
+            <p className='text-center'> Developed a weather app using React with real-time data.</p>
+          </div>
         </div>
+      </div>
+       <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <div className='relative group'>
+          <img className='w-full h-[220px] object-cover rounded-lg' src={ecommerce} />
+          <div className='project-design group-hover:opacity-100 rounded-lg'>
+            <p className='text-center'>Developed a responsive e-commerce web application using React with API integration for product listing, cart, and order management.</p>
+          </div>
         </div>
-       </section>
-    </div>
+        <div className='relative group'>
+          <img className='w-full h-[220px] object-cover rounded-lg' src={loan} />
+          <div className='project-design group-hover:opacity-100 rounded-lg'>
+            <p className='text-center'>Developed a loan management application with secure login and MySQL.</p>
+          </div>
+        </div>
+        <div className='relative group'>
+          <img className='w-full h-[220px] object-cover rounded-lg' src={milky}/>
+          <div className='project-design group-hover:opacity-100 rounded-lg'>
+            <p className='text-center'>Developed a responsive Milkymist product website using React to showcase products and user-friendly UI.</p>
+          </div>
+        </div>
+      </div>
+    </section>
   )
 }
 

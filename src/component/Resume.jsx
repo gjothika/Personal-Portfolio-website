@@ -10,7 +10,7 @@ const Resume = () => {
             <div className='md:w-1/2 flex  justify-center'>
                 <div className='flex flex-col justify-center p-5'>
                     <h1 className='text-4xl text-white border-b-2 border-primary mb-5 w-[130px] font-bold'>Resume</h1>
-                    <p className='text-1xl text-white pb-5'>You can view my resume 
+                    <p className='text-1xl text-white pb-5'>You can view my resume
                     <a className='bttn' href='/resume.pdf' download>Download</a>
                     </p>
                     </div>
